@@ -28,6 +28,8 @@ typedef map<int,int> mii;
 typedef unordered_map<ll,ll> omll;
 typedef unordered_map<int,int> omii;
 
+// TC : O(V+E) , SC : O(V+E) + O(N) + O(N)
+
 bool bfs(int src, vi adj[],vi &color){
     queue<int>q;
     q.push(src);
