@@ -5,9 +5,11 @@ dp   : 1 2 2 3 4 5 5 6
 
 dp[i] means length of longest increasing subsequence ending at i (including a[i])
 j<i && a[j]<a[i] --> dp[i] = max(dp[j]...)+1
+
 */
 
 //TC : O(N*N) : (standard)
+
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
